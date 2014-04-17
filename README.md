@@ -6,6 +6,16 @@ This application provides a form followed by a game : a scratchcard. Your data w
 - Your parse credentials
 - Your server url
 
+# Quick start
+
+1. Clone or download the repo and upload the app.zip in your Retail Manager account, in the app section.
+2. Add the app in one of your appset and bind your device to use this appset
+3. You can set your Parse credential, or the URL to your server, where the collected data will be sent, and scratchcard parameters (win/loose probabilities, scratch completion) in the app setup on the Retail Manager
+4. Launch the app on your device, you can either access the URL you specified in step 3 or change the URL and load it.
+5. If you want to go further, you can edit the source code in the src/ or app/ folder (see below) and zip your new version of the app. The zip should only contain the content of the app/ folder.
+
+# To go further
+
 ## File organisation
 
 ```shell
