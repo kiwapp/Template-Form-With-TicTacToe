@@ -31,8 +31,8 @@ gulp.task('default',['assets','vendor','templates','scripts','styles'], function
   // Open Google Chrome @ localhost:8080
   gulp.src('./build/index.html')
     .pipe(openB("",{
-      // app:"google-chrome",
-      app:"/usr/lib/chromium/chromium",
+      app:"google-chrome",
+      // app:"/usr/lib/chromium/chromium",
       url: "http://localhost:8080/build/"
    }));
 
@@ -111,6 +111,7 @@ gulp.task('vendor', function(){
       bowerDep + '/kiwapp/kiwapp.js',
       bowerDep + '/scratchcard/scratchcard.min.js',
       bowerDep + '/parseConnector/parseConnector.js',
+      bowerDep + '/mailChimpConnector/mailChimpConnector.js',
     ])
       .pipe(concat("vendor.min.js"))
       .pipe(gulp.dest('build/js')),

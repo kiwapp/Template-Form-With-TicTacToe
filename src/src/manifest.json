@@ -1,1 +1,94 @@
-{"app_info":{"name":"TicTacToe Game","author":"Aurelien","codename":"4.3","author_email":"aurelien@procheo.fr","description":"Play a game !"},"config":{"typedef":{},"fields":{"activeParse":{"kw_type":"bool","label":"Use Parse Saas service to save your forms","mandatory":false},"X_Parse_REST_API_Key":{"kw_type":"string","mandatory":false,"label":"The X-Parse-REST-API-Key use with Parse for the form submission.","field_label":"Write your Parse X-Parse-REST-API-Key."},"X_Parse_Application_Id":{"kw_type":"string","mandatory":false,"label":"The webservice X-Parse-Application-Id use with Parse for the form submission.","field_label":"Choose your Parse X-Parse-Application-Id."},"Class_Parse_name":{"kw_type":"string","mandatory":false,"label":"The Classe Parse webservice Name for the form submission.","field_label":"Write your Parse url."},"customUrl":{"kw_type":"string","label":"Custom URL to send your forms","field_label":"Choose your webservice url.","mandatory":false},"probaWinner":{"kw_type":"integer","label":"Probability to win","field_label":"Set a value between 0 to 100.","mandatory":false},"probaLost1":{"kw_type":"integer","label":"Case lost 1: probability","field_label":"Set a value between 0 to 100.","mandatory":false},"probaLost2":{"kw_type":"integer","label":"Case lost 2: probability","field_label":"Set a value between 0 to 100.","mandatory":false},"probaLost3":{"kw_type":"integer","label":"Case lost 3: probability","field_label":"Set a value between 0 to 100.","mandatory":false},"minCompletion":{"kw_type":"integer","label":"Minimum completion percent to complete the game","field_label":"Set a value between 0 to 100."}},"defaultConfig":{"activeParse":true}}}
+{
+  "app_info": {
+    "name": "TicTacToe Game",
+    "author": "Aurelien",
+    "codename": "4.3",
+    "author_email": "aurelien@procheo.fr",
+    "description": "Play a game !"
+  },
+  "config": {
+    "typedef": {},
+    "fields": {
+      "activeParse": {
+        "kw_type": "bool",
+        "label": "Use Parse Saas service to save your forms",
+        "mandatory": false
+      },
+      "X_Parse_REST_API_Key": {
+        "kw_type": "string",
+        "mandatory": false,
+        "label": "The X-Parse-REST-API-Key use with Parse for the form submission.",
+        "field_label": "Write your Parse X-Parse-REST-API-Key."
+      },
+      "X_Parse_Application_Id": {
+        "kw_type": "string",
+        "mandatory": false,
+        "label": "The webservice X-Parse-Application-Id use with Parse for the form submission.",
+        "field_label": "Choose your Parse X-Parse-Application-Id."
+      },
+      "Class_Parse_name": {
+        "kw_type": "string",
+        "mandatory": false,
+        "label": "The Classe Parse webservice Name for the form submission.",
+        "field_label": "Write your Parse url."
+      },
+
+"activeMailChimp": {
+        "kw_type": "bool",
+        "label": "Use MailChimp service to save your subscribers email",
+        "mandatory": false
+      },
+      "MailChimp_API_Key": {
+        "kw_type": "string",
+        "mandatory": false,
+        "label": "The mailChimp-API-KEY use with Parse for the form submission.",
+        "field_label": "Write your Parse X-Parse-REST-API-Key."
+      },
+      "MailChimp_List_Name": {
+        "kw_type": "string",
+        "mandatory": false,
+        "label": "The Classe Parse webservice Name for the form submission.",
+        "field_label": "Write your Parse url."
+      },
+
+      "customUrl": {
+        "kw_type": "string",
+        "label": "Custom URL to send your forms",
+        "field_label": "Choose your webservice url.",
+        "mandatory": false
+      },
+      "probaWinner": {
+        "kw_type": "integer",
+        "label": "Probability to win",
+        "field_label": "Set a value between 0 to 100.",
+        "mandatory": false
+      },
+      "probaLost1": {
+        "kw_type": "integer",
+        "label": "Case lost 1: probability",
+        "field_label": "Set a value between 0 to 100.",
+        "mandatory": false
+      },
+      "probaLost2": {
+        "kw_type": "integer",
+        "label": "Case lost 2: probability",
+        "field_label": "Set a value between 0 to 100.",
+        "mandatory": false
+      },
+      "probaLost3": {
+        "kw_type": "integer",
+        "label": "Case lost 3: probability",
+        "field_label": "Set a value between 0 to 100.",
+        "mandatory": false
+      },
+      "minCompletion": {
+        "kw_type": "integer",
+        "label": "Minimum completion percent to complete the game",
+        "field_label": "Set a value between 0 to 100."
+      }
+    },
+    "defaultConfig": {
+      "activeParse": true
+    }
+  }
+}

@@ -53,6 +53,23 @@
                     parseService.app(APP_CONFIG.Class_Parse_name).send(json);
                 }
 
+                 if(APP_CONFIG.activeMailChimp) {
+
+                    var mailChimpService = new MailChimpConnector(APP_CONFIG.MailChimp_API_Key, APP_CONFIG.MailChimp_List_Name);
+
+                    function addSubscriberCallback(data){
+                      console.log(data);
+                    }
+
+                    function getListCallback(data){
+                      var idList = data.data[0].id;
+                      mailChimpService.addSubscriber(addSubscriberCallback,idList,json);
+                    }
+
+                    mailChimpService.getList(getListCallback);
+
+                }
+
                 if(APP_CONFIG.customUrl) {
                     Kiwapp.session().store(json,{
                         url    : APP_CONFIG.customUrl,
